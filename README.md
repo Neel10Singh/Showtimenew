@@ -10,7 +10,8 @@
 <br />
 <div align="center">
   <a href="https://master--neel10singh.netlify.app/">
-    <img src="src/images/favicon.png" alt="Logo" width="80" height="80">
+    <img src="./app/favicon.ico
+    " alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">Showtime</h3>
@@ -59,7 +60,10 @@
 
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](master--neel10singh.netlify.app)
+[![Product Name Screen Shot][product-screenshot1]](master--neel10singh.netlify.app)
+[![Product Name Screen Shot][product-screenshot2]](master--neel10singh.netlify.app)
+[![Product Name Screen Shot][product-screenshot3]](master--neel10singh.netlify.app)
+[![Product Name Screen Shot][product-screenshot4]](master--neel10singh.netlify.app)
 
 This is entertainment library website where you can search for movies, series etc. add them to your custom made lists, customize lists according to your needs, and share your lists with others.
 
@@ -69,7 +73,7 @@ This is entertainment library website where you can search for movies, series et
 
 - [![Next.js][Next.js]][Next-url]
 - [![MongoDB][Mongodb]][Mongodb-url]
-- [![TailwindCSS][TilwindCSS]][TailwindCSS-url]
+- [![TailwindCSS][TailwindCSS]][TailwindCSS-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -130,7 +134,10 @@ Portfolio Link: [master--neel10singh.netlify.app](master--neel10singh.netlify.ap
 [license-shield]: https://img.shields.io/github/license/Neel10Singh/Neel_portfolio.svg?style=for-the-badge
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/neelaksh-singh-7b020a17a/
-[product-screenshot]: src/images/portfolio.png
+[product-screenshot1]: ./public//ss1.png
+[product-screenshot2]: ./public//ss2.png
+[product-screenshot3]: ./public//ss3.png
+[product-screenshot4]: ./public//ss4.png
 [Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
 [Next-url]: https://nextjs.org/
 [Mongodb]: https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white
