@@ -10,8 +10,7 @@
 <br />
 <div align="center">
   <a href="https://master--neel10singh.netlify.app/">
-    <img src="./app/favicon.ico
-    " alt="Logo" width="80" height="80">
+    <img src="./app/favicon.ico" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">Showtime</h3>
@@ -60,10 +59,7 @@
 
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot1]](master--neel10singh.netlify.app)
-[![Product Name Screen Shot][product-screenshot2]](master--neel10singh.netlify.app)
-[![Product Name Screen Shot][product-screenshot3]](master--neel10singh.netlify.app)
-[![Product Name Screen Shot][product-screenshot4]](master--neel10singh.netlify.app)
+<img src="./public//ss1.png" alt="Logo" width="280" height="150">
 
 This is entertainment library website where you can search for movies, series etc. add them to your custom made lists, customize lists according to your needs, and share your lists with others.
 
