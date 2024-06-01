@@ -130,7 +130,7 @@ const page = ({ params: { list } }) => {
           <div className='fixed  top-0 left-0 h-full w-full bg-black bg-opacity-60' />
           <div className=' relative z-20 mt-24 px-10'>
             <button
-              className='bg-white h-10 w-10 border hover:bg-transparent text-zinc-950 hover:text-white transition-all flex justify-center items-center text-2xl font-bold rounded-full mb-5'
+              className='bg-white h-10 w-10 border hover:bg-transparent text-zinc-950 hover:text-white transition-all flex justify-center items-center text-2xl font-bold rounded-full mb-5 pb-2'
               onClick={() => {
                 router.push('/Home')
               }}
@@ -157,6 +157,16 @@ const page = ({ params: { list } }) => {
                   )}
                 </button>
               </div>
+            )}
+            {!listData?.private && session?.user?.email == undefined && (
+              <button
+                className='bg-white px-4 py-2 border hover:bg-transparent text-zinc-950 hover:text-white transition-all flex justify-center items-center text-lg font-bold rounded-md'
+                onClick={() => {
+                  router.push('/')
+                }}
+              >
+                Go to Login Page
+              </button>
             )}
             <div className=' flex flex-wrap gap-5 justify-center items-center w-full h-[70%] overflow-y-auto mt-10 pb-10 '>
               {listData?.movies?.map((movie) => (

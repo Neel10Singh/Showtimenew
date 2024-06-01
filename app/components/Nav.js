@@ -128,8 +128,16 @@ const Nav = () => {
                               className='h-full w-12 object-contain'
                             ></Image>
                           )}
-                          <p className=' text-lg font-semibold'>{res.Title}</p>
-                          <p className=' text-sm text-end'>{res.Year}</p>
+                          <p className=' text-sm md:text-lg font-semibold'>
+                            {res.Title.length <= 30 ? (
+                              <span>{res.Title}</span>
+                            ) : (
+                              <span>{res.Title.substring(0, 28)}...</span>
+                            )}
+                          </p>
+                          <p className=' text-xs md:text-sm text-end'>
+                            {res.Year}
+                          </p>
                         </div>
                       )
                     })}
