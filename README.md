@@ -60,8 +60,9 @@
 ## About The Project
 
 <img src="./public//ss1.png" alt="Logo" width="280" height="150">
-
-This is entertainment library website where you can search for movies, series etc. add them to your custom made lists, customize lists according to your needs, and share your lists with others.
+<img src="./public//ss2.png" alt="Logo" width="280" height="150">
+<img src="./public//ss3.jpg" alt="Logo" width="150" height="280">
+<img src="./public//ss4.jpg" alt="Logo" width="150" height="280">This is entertainment library website where you can search for movies, series etc. add them to your custom made lists, customize lists according to your needs, and share your lists with others.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
