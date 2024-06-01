@@ -8,12 +8,13 @@ export async function POST(request) {
     const { email, selectedlist, selected, listType } = await request.json()
 
     await connectMongoDB()
-    const user = await User.findOne({ email }).select('lists')
+    const user = await User.findOne({ email })
     let list
+    console.log(user.email)
     if (listType == 'new') {
       list = await List.create({
         Name: selectedlist,
-        Owner: user._id,
+        Owner: user.email,
         private: true,
       })
       const result = await User.findOneAndUpdate(
@@ -22,8 +23,9 @@ export async function POST(request) {
         { new: true }
       )
     } else {
-      list = await List.findOne({ Name: selectedlist, Owner: user._id })
+      list = await List.findOne({ Name: selectedlist, Owner: user.email })
     }
+    console.log(list)
     const result = await List.findOneAndUpdate(
       { _id: list._id },
       { $addToSet: { movies: selected } },

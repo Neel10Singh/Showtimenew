@@ -1,7 +1,8 @@
 'use client'
 import { TiTick } from 'react-icons/ti'
 
-import { useState } from 'react'
+import { useContext } from 'react'
+import { UserContext } from '../../contexts/UserContext'
 
 const colours = [
   '#E74C3C',
@@ -20,7 +21,7 @@ const AddToList = ({
   setSelectedList,
   setListType,
 }) => {
-  // console.log(lists)
+  const { user } = useContext(UserContext)
 
   return (
     <>
@@ -30,7 +31,7 @@ const AddToList = ({
           Select a list:{' '}
         </h4>
         <div className='flex gap-3 flex-wrap justify-center mt-3'>
-          {lists?.map((list, i) => (
+          {user?.map((list, i) => (
             <button
               className={`relative w-36 h-12 border text-sm`}
               style={{
@@ -40,16 +41,16 @@ const AddToList = ({
                 }, black)`,
               }}
               onClick={() => {
-                setSelectedList(list)
+                setSelectedList(list.Name)
                 setListType('old')
               }}
             >
-              {selectedlist === list && (
+              {selectedlist === list.Name && (
                 <div className=' flex justify-center items-center absolute top-[-0.5rem] left-[-0.5rem] bg-green-700 text-white w-6 h-6 text-xl rounded-full'>
                   <TiTick />
                 </div>
               )}
-              {list}
+              {list.Name}
             </button>
           ))}
         </div>

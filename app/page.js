@@ -35,7 +35,8 @@ const page = () => {
         setError('Invalid credenials')
         return
       }
-      router.replace('Home')
+      console.log('Loggingin...')
+      if (res.ok) router.replace('/Home')
     } catch (error) {
       console.log('Error with siging in:', error)
     }
@@ -151,7 +152,7 @@ const page = () => {
               </button>
             )}
           </form>
-          <div className='h-0 w-full relative border-b'>
+          {/* <div className='h-0 w-full relative border-b'>
             <span className='absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] bg-gray-900 tt-sm md:text-xs'>
               or
             </span>
@@ -159,7 +160,7 @@ const page = () => {
           <button className='w-full bg-white text-black font-bold hover:border h-16 md:h-10 rounded-md flex justify-center items-center text-lg md:text-sm'>
             <Image src={google} className='h-8 w-8 md:h-6 md:w-6'></Image>
             Continue with Google
-          </button>
+          </button> */}
           {login ? (
             <span className='text-sm md:text-xs'>
               Don't have an account?{' '}

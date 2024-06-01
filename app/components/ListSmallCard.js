@@ -11,9 +11,7 @@ const ListSmallCard = ({ movie }) => {
         className='h-full  object-cover'
       />
       <div className='flex flex-col gap-1 w-full justify-center'>
-        <p className=' font-bold text-center text-2xl md:text-xl'>
-          {movie.Title}
-        </p>
+        <p className=' font-bold  text-2xl md:text-xl'>{movie.Title}</p>
         <div className='flex gap-2 text-md w-full justify-end'>
           <p>{movie.Genre} |</p>
           <p>{movie.Rated}</p>
