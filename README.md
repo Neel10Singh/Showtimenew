@@ -136,11 +136,11 @@ Portfolio Link: [master--neel10singh.netlify.app](master--neel10singh.netlify.ap
 [linkedin-url]: https://www.linkedin.com/in/neelaksh-singh-7b020a17a/
 [product-screenshot1]: ./public//ss1.png
 [product-screenshot2]: ./public//ss2.png
-[product-screenshot3]: ./public//ss3.png
-[product-screenshot4]: ./public//ss4.png
+[product-screenshot3]: ./public//ss3.jpg
+[product-screenshot4]: ./public//ss4.jpg
 [Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
 [Next-url]: https://nextjs.org/
 [Mongodb]: https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white
 [Mongodb-url]: https://www.mongodb.com/
 [TailwindCSS]: https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white
-[TailwindCSS-docs]: https://tailwindcss.com/docs/
+[TailwindCSS-url]: https://tailwindcss.com/docs/
