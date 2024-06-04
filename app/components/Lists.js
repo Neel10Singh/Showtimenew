@@ -18,11 +18,11 @@ const Lists = () => {
       {user?.map((list) => {
         return (
           <div
-            className='flex flex-col gap-3 p-3 border border-white bg-white bg-opacity-15 h-[19rem]  min-w-80 hover:scale-110 transition-all cursor-pointer '
+            className='flex flex-col gap-3 p-3 border border-white bg-white bg-opacity-15 h-[19rem] min-w-96 hover:scale-110 transition-all cursor-pointer '
             onClick={() => handleredirect(list)}
           >
             <h4 className='font-bold text-lg border-b'>{list.Name}</h4>
-            <div className='flex flex-col gap-3 overflow-y-auto '>
+            <div className='flex flex-col  overflow-y-auto '>
               {list.movies.map((movie) => {
                 return <ListSmallCard movie={movie} />
               })}

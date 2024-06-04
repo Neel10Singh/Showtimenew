@@ -6,6 +6,7 @@ import google from '@public/google.jpg'
 import { useState } from 'react'
 import { signIn } from 'next-auth/react'
 import { useRouter } from 'next/navigation'
+import { LuLoader2 } from 'react-icons/lu'
 
 const ruslan = Ruslan_Display({ weight: '400', subsets: ['latin'] })
 
@@ -16,12 +17,15 @@ const page = () => {
   const [password, setPassword] = useState('')
   const [error, setError] = useState('')
   const [success, setSuccess] = useState('')
+  const [active, setActive] = useState(true)
 
   const router = useRouter()
 
   const handleLogin = async (event) => {
     event.preventDefault()
+    setActive(false)
     if (!email || !password) {
+      setActive(true)
       setError('All fields necessary')
       return
     }
@@ -32,6 +36,7 @@ const page = () => {
         redirect: false,
       })
       if (res.error) {
+        setActive(true)
         setError('Invalid credenials')
         return
       }
@@ -40,11 +45,14 @@ const page = () => {
     } catch (error) {
       console.log('Error with siging in:', error)
     }
+    setActive(true)
   }
 
   const handleSignUp = async (event) => {
     event.preventDefault()
+    setActive(false)
     if (!name || !email || !password) {
+      setActive(true)
       setError('All fields necessary')
       return
     }
@@ -59,6 +67,7 @@ const page = () => {
       })
       const { user } = await check.json()
       if (user) {
+        setActive(true)
         setError('User already exists')
         setSuccess('')
         return
@@ -85,6 +94,7 @@ const page = () => {
     } catch (error) {
       console.log('Error during signup: ', error)
     }
+    setActive(true)
   }
 
   return (
@@ -140,7 +150,13 @@ const page = () => {
                 onClick={handleLogin}
                 className='w-full bg-midorange font-bold hover:border h-16 md:h-10 rounded-md'
               >
-                Log In
+                {active ? (
+                  <span>Log In</span>
+                ) : (
+                  <span className=' flex w-full justify-center text-xl'>
+                    <LuLoader2 className='rotate' />
+                  </span>
+                )}
               </button>
             ) : (
               <button
@@ -148,7 +164,13 @@ const page = () => {
                 onClick={handleSignUp}
                 className='w-full bg-midorange font-bold hover:border h-16 md:h-10 rounded-md'
               >
-                Sign Up
+                {active ? (
+                  <span>Log In</span>
+                ) : (
+                  <span className=' flex w-full justify-center text-xl'>
+                    <LuLoader2 className='rotate' />
+                  </span>
+                )}
               </button>
             )}
           </form>

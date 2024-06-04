@@ -2,13 +2,13 @@ import Image from 'next/image'
 
 const ListSmallCard = ({ movie }) => {
   return (
-    <div className='flex p-1 gap-1 border-b text-white '>
+    <div className='flex p-2 gap-1 border-b text-white '>
       <Image
         src={movie.Poster}
         alt={movie.Title}
         width={40}
         height={55}
-        className='h-full  object-cover'
+        className='h-full  object-contain'
       />
       <div className='flex flex-col gap-1 w-full justify-center'>
         <p className=' font-bold  text-2xl md:text-xl'>{movie.Title}</p>
